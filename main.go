@@ -24,6 +24,7 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
+	log.Printf("Request comes!")
 	name := os.Getenv("NAME")
 	if name == "" {
 		name = "World"
